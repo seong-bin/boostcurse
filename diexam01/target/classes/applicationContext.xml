@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- xml파일 가장 바깥똑 tag를 루트 엘리먼트 라고 한다 -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- 빈 등록  -->
+	<bean id="userBean" class="kr.or.connect.diexam01.UserBean"></bean>
+	<bean id="e" class="kr.or.connect.diexam01.Engine"></bean>
+	<bean id="c" class="kr.or.connect.diexam01.Car">
+		<property name="engine" ref="e"></property>	<!-- ref : 위에서 생성한 빈인 e를 사용하겠다. property : c의 setEngine메서드의 파라미터로 e를 넘김 -->
+	</bean>
+
+</beans>
