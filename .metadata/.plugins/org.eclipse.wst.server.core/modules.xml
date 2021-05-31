@@ -3,6 +3,7 @@
   <module moduleId="org.eclipse.jst.jee.server:exam31" serverId="Tomcat v8.5 Server at localhost"/>
   <module moduleId="org.eclipse.jst.jee.server:mvcexam" serverId="Tomcat v8.5 Server at localhost"/>
   <module moduleId="org.eclipse.jst.j2ee.server:mavenweb" serverId="Tomcat v8.5 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:calculator" serverId="Tomcat v8.5 Server at localhost"/>
   <module moduleId="org.eclipse.jst.j2ee.server:jdbcexam" serverId="Tomcat v8.5 Server at localhost"/>
   <module moduleId="org.eclipse.jst.jee.server:mavenweb" serverId="Tomcat v8.5 Server at localhost"/>
   <module moduleId="org.eclipse.jst.jee.server:guestbook" serverId="Tomcat v8.5 Server at localhost"/>

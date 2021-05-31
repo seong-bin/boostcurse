@@ -27,12 +27,15 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="org.edwith.webbe.calculator"/>
 			<item value="kr.or.connet.guestbook"/>
 		</list>
 		<list key="groupId">
+			<item value="org.edwith.webbe"/>
 			<item value="kr.or.connet"/>
 		</list>
 		<list key="artifactId">
+			<item value="calculator"/>
 			<item value="guestbook"/>
 		</list>
 		<list key="projectNameTemplate">
