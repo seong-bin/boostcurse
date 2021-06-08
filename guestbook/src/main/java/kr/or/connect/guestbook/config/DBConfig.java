@@ -19,12 +19,13 @@ import org.springframework.transaction.annotation.TransactionManagementConfigure
 public class DBConfig implements TransactionManagementConfigurer {
 	private String driverClassName = "com.mysql.jdbc.Driver";
 
-	private String url = "jdbc:mysql://localhost:3306/boostcourse?useUnicode=true&characterEncoding=utf8";
+	private String url = "jdbc:mysql://localhost:3306/boostcourse?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC";
 	private String username = "root";
 	private String password = "tlwkr19";
 
 	@Bean
 	public DataSource dataSource() {
+		System.out.println("db 정보");
 		BasicDataSource dataSource = new BasicDataSource();
 		dataSource.setDriverClassName(driverClassName);
 		dataSource.setUrl(url);
@@ -35,11 +36,13 @@ public class DBConfig implements TransactionManagementConfigurer {
 
 	@Override
 	public PlatformTransactionManager annotationDrivenTransactionManager() {
+		System.out.println("annotationDrivenTransactionManager 111");
 		return transactionManger();
 	}
 
 	@Bean
 	public PlatformTransactionManager transactionManger() {
+		System.out.println("transactionManger 222");
 		return new DataSourceTransactionManager(dataSource());
 	}
 }

@@ -21,6 +21,8 @@ import org.springframework.web.bind.annotation.RestController;
 import kr.or.connect.guestbook.dto.Guestbook;
 import kr.or.connect.guestbook.service.GuestbookService;
 
+// 스웨거 url
+// http://localhost:8089/calculator/swagger-ui.html
 @RestController
 @RequestMapping(path="/guestbooks")
 public class GuestbookApiController {

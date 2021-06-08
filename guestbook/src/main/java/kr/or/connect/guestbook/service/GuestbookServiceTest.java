@@ -15,8 +15,8 @@ public class GuestbookServiceTest {
 		GuestbookService guestbookService = ac.getBean(GuestbookService.class);
 		
 		Guestbook guestbook = new Guestbook();
-		guestbook.setName("test");
-		guestbook.setContent("java master");
+		guestbook.setName("test 06-08");
+		guestbook.setContent("java master 06-08");
 		guestbook.setRegdate(new Date());
 		Guestbook result = guestbookService.addGuestbook(guestbook, "127.0.0.1");
 		System.out.println(result);

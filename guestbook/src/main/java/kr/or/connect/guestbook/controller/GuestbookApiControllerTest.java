@@ -53,44 +53,44 @@ public class GuestbookApiControllerTest {
         mockMvc = MockMvcBuilders.standaloneSetup(guestbookApiController).build();
     }
 
-    @Test
-    public void getGuestbooks() throws Exception {
-        Guestbook guestbook1 = new Guestbook();
-        guestbook1.setId(1L);
-        guestbook1.setRegdate(new Date());
-        guestbook1.setContent("hello");
-        guestbook1.setName("bae");
-
-        List<Guestbook> list = Arrays.asList(guestbook1);
-        // when( 목객체.목객체메소드호출() ).threnReturn(목객체 메소드가 리턴 할 값)
-        when(guestbookService.getGuestbooks(0)).thenReturn(list);
-
-        // MockMvcRequestBuilders를 이용해 MockMvc에게 호출할 URL을 생성(GET 방식으로 /guestbooks 경로를 호출하라는 의미)
-        // contentType(MediaType.APPLICATION_JSON) : application/json 형식으로 api를 호출
-        RequestBuilder reqBuilder = MockMvcRequestBuilders.get("/guestbooks").contentType(MediaType.APPLICATION_JSON);
-        // mockMvc.perform(reqBuilder) : reqBuilder에 해당하는 URL에 대한 요청을 보냈다는 것을 의미
-        // andExpect(status().isOk()) : mockMvc에 위해 URL이 실행되고 상태코드값이 200이 나와야 한다는 것을 의미
-        // andDo(print()) : 처리 내용을 출력
-        mockMvc.perform(reqBuilder).andExpect(status().isOk()).andDo(print());
-        // Json 결과에 “name”:”kim”이 있을 경우에만 성공
-//        mockMvc.perform(reqBuilder).andExpect(jsonPath("$.list[0].name").value("bae")); 
-
-        verify(guestbookService).getGuestbooks(0);
-    }
+//    @Test
+//    public void getGuestbooks() throws Exception {
+//        Guestbook guestbook1 = new Guestbook();
+//        guestbook1.setId(8L);
+//        guestbook1.setRegdate(new Date());
+//        guestbook1.setContent("hello06-08");
+//        guestbook1.setName("bae06-08");
+//
+//        List<Guestbook> list = Arrays.asList(guestbook1);
+//        // when( 목객체.목객체메소드호출() ).threnReturn(목객체 메소드가 리턴 할 값)
+//        when(guestbookService.getGuestbooks(0)).thenReturn(list);
+//
+//        // MockMvcRequestBuilders를 이용해 MockMvc에게 호출할 URL을 생성(GET 방식으로 /guestbooks 경로를 호출하라는 의미)
+//        // contentType(MediaType.APPLICATION_JSON) : application/json 형식으로 api를 호출
+//        RequestBuilder reqBuilder = MockMvcRequestBuilders.get("/guestbooks").contentType(MediaType.APPLICATION_JSON);
+//        // mockMvc.perform(reqBuilder) : reqBuilder에 해당하는 URL에 대한 요청을 보냈다는 것을 의미
+//        // andExpect(status().isOk()) : mockMvc에 위해 URL이 실행되고 상태코드값이 200이 나와야 한다는 것을 의미
+//        // andDo(print()) : 처리 내용을 출력
+//        mockMvc.perform(reqBuilder).andExpect(status().isOk()).andDo(print());
+//        // Json 결과에 “name”:”kim”이 있을 경우에만 성공
+////        mockMvc.perform(reqBuilder).andExpect(jsonPath("$.list[0].name").value("bae")); 
+//
+//        verify(guestbookService).getGuestbooks(0);
+//    }
 
     // 방명록을 삭제하는 web api를 테스트
-//    @Test
-//    public void deleteGuestbook() throws Exception {
-//        Long id = 1L;
-//
-//        when(guestbookService.deleteGuestbook(id, "127.0.0.1")).thenReturn(1);
-//
-//        // “/guestbooks/” + id 경로를 DELETE방식으로 호출하기 위한 경로 정보를 가지고 있는 reqBuilder객체를 생성
-//        RequestBuilder reqBuilder = MockMvcRequestBuilders.delete("/guestbooks/" + id).contentType(MediaType.APPLICATION_JSON);
-//        // reqBuilder에 해당하는 URL을 호출한 후, 상태 코드가 200일 경우 성공합니다. 그리고 결과를 출력
-//        mockMvc.perform(reqBuilder).andExpect(status().isOk()).andDo(print());
-//
-//        // guestbookService 목객체의 deleteGuestbook(id, “127.0.0.1”)메소드가 Web API가 동작하면서 호출되었다면 성공
-//        verify(guestbookService).deleteGuestbook(id, "127.0.0.1");
-//    }
+    @Test
+    public void deleteGuestbook() throws Exception {
+        Long id = 7L;
+
+        when(guestbookService.deleteGuestbook(id, "127.0.0.1")).thenReturn(1);
+
+        // “/guestbooks/” + id 경로를 DELETE방식으로 호출하기 위한 경로 정보를 가지고 있는 reqBuilder객체를 생성
+        RequestBuilder reqBuilder = MockMvcRequestBuilders.delete("/guestbooks/" + id).contentType(MediaType.APPLICATION_JSON);
+        // reqBuilder에 해당하는 URL을 호출한 후, 상태 코드가 200일 경우 성공합니다. 그리고 결과를 출력
+        mockMvc.perform(reqBuilder).andExpect(status().isOk()).andDo(print());
+
+        // guestbookService 목객체의 deleteGuestbook(id, “127.0.0.1”)메소드가 Web API가 동작하면서 호출되었다면 성공
+        verify(guestbookService).deleteGuestbook(id, "127.0.0.1");
+    }
 }
