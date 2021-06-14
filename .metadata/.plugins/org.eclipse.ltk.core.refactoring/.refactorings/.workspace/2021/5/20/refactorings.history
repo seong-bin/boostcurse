@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;mavenweb/src/main/resources&apos;" deleteContents="false" description="Delete resource &apos;mavenweb/src/main/resources&apos;" element1="/mavenweb/src/main/resources" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1620802087081"/>&#x0A;<refactoring comment="Delete resource &apos;mvcexam/src/main/webapp/index.jsp&apos;" deleteContents="false" description="Delete resource &apos;mvcexam/src/main/webapp/index.jsp&apos;" element1="/mvcexam/src/main/webapp/index.jsp" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1620881304324"/>
-</session>

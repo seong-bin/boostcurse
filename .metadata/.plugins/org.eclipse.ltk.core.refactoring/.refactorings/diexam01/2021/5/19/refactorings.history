@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Copy element &apos;ApplicationContextExam01.java&apos; to &apos;diexam01/src/main/java/kr.or.connect.diexam01&apos;&#x0D;&#x0A;- Original project: &apos;diexam01&apos;&#x0D;&#x0A;- Destination element: &apos;diexam01/src/main/java/kr.or.connect.diexam01&apos;&#x0D;&#x0A;- Original element: &apos;kr.or.connect.diexam01.ApplicationContextExam01.java&apos;" description="Copy compilation unit" destination="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;kr.or.connect.diexam01" element1="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;kr.or.connect.diexam01{ApplicationContextExam01.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1620285247948" units="1" version="1.0"/>
-</session>

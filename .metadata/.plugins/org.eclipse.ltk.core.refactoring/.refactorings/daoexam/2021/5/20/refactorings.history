@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename type &apos;org.edwith.webbe.daoexam.dto.roleDTO&apos; to &apos;RoleDTO&apos;&#x0D;&#x0A;- Original project: &apos;daoexam&apos;&#x0D;&#x0A;- Original element: &apos;org.edwith.webbe.daoexam.dto.roleDTO&apos;&#x0D;&#x0A;- Renamed element: &apos;org.edwith.webbe.daoexam.dto.RoleDTO&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;roleDTO&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;org.edwith.webbe.daoexam.dto{roleDTO.java[roleDTO" matchStrategy="1" name="RoleDTO" qualified="false" references="true" similarDeclarations="false" stamp="1620719644148" textual="false" version="1.0"/>
-</session>

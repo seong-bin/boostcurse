@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename type &apos;kr.or.connect.diexam01.AppliactionConfig&apos; to &apos;ApplicationConfig&apos;&#x0D;&#x0A;- Original project: &apos;diexam01&apos;&#x0D;&#x0A;- Original element: &apos;kr.or.connect.diexam01.AppliactionConfig&apos;&#x0D;&#x0A;- Renamed element: &apos;kr.or.connect.diexam01.ApplicationConfig&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;AppliactionConfig&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;kr.or.connect.diexam01{AppliactionConfig.java[AppliactionConfig" matchStrategy="1" name="ApplicationConfig" qualified="false" references="true" similarDeclarations="false" stamp="1620623421082" textual="false" version="1.0"/>
-</session>
